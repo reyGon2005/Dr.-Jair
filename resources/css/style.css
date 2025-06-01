@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin: 0;
+    background-color: #F2F0D5;
+}
+
+html{
+    font-size: 12px;
+}   
+
+nav, ul, li, .logo{
+    background-color: #244D9C;
+}
+
+.logo{
+    width: auto;
+    max-height: 130px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 1rem;
+}
+
+nav li{
+    margin: 10px;
+    font-size: 1.4rem;
+    list-style: none;
+    display: inline;
+    color: #F2F0D5;
+
+}
+.header-link{
+    background-color: #F49305;
+    padding: .3rem;
+    border-radius: 10px;
+}
+
+.mural{
+    background-image: url("../img/mural.jpg");
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 500px;
+}
+
+main{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 1rem;
+    justify-content: space-around;
+    justify-items: center;
+    text-align: center;
+}
+
+.content{
+    padding: .4rem;
+    border: solid 3px #244D9C ;
+    border-radius: 15px;
+}
+
+.target{
+    margin-top: 1rem;
+    height: 300px;
+}
+
+.target span{
+    text-align: center;
+}
+
+@media only screen and (max-width: 480px) {
+    .mural{
+        background-position: right;
+        height: 520px;
+    }
+    .content{
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 931px){
+    .mural{
+        height: 650px;
+    }
+    .content{
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 932px){
+    .content{
+        width: 28%;
+    }
+}
